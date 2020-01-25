@@ -1,0 +1,14 @@
+﻿@model List<Games2020_1.Models.Game>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<ol class="list-group">
+
+
+    @foreach (var g in Model)
+    {
+    <li class="list-group-item">@g.Title @g.Price zł @g.Genre.Name</li>
+    }
+    </ol>
